@@ -21,8 +21,9 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/general.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script src="https://kit.fontawesome.com/0fd55102a9.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header class="header">
@@ -52,7 +53,7 @@
               Build your brand’s recognition and get detailed insights on how
               your links are performing.
             </p>
-            <button class="btn btn--primary btn--rounded">Get Started</button>
+            <a href="#shorten-section-id" class="btn btn--primary btn--rounded">Get Started</a>
           </div>
           <div class="hero-img-box">
             <img
@@ -62,73 +63,80 @@
           </div>
         </div>
       </section>
-      <section class="section-shorten">
-        <div class="shorten nice-bg">
-          <form class="shorten-form" action="">
-            <input type="text" placeholder="Shorten a link here..." />
-            <button class="btn btn--primary">Shorten It!</button>
+      <section id="shorten-section-id" class="section-shorten">
+        <div class="shorten nice-bg rounded-border">
+          <form class="shorten-form" action="" id="shorten-form-id">
+            <input type="text" placeholder="Shorten a link here..." id="link-input"/>
+            <button class="btn btn--primary" type="submit">Shorten It!</button>
           </form>
+          <span class="form-error-message" style="display: none;">Please add a link</span>
         </div>
       </section>
-      <section class="section-statistics">
-        <div class="container-statistics">
-          <div class="header-statistics">
-            <h2>Advanced Statistics</h2>
-            <p>
-              Track how your links are performing across the web with our
-              advanced statistics dashboard.
-            </p>
+      <div class="main-section-container">
+        <section class="shortened-links">
+          <div class="shortened-links-container" id="links-container-id">
           </div>
-          <div class="statistics-card">
-            <div class="statistics-icons-container">
-              <img
-                src="./images/icon-brand-recognition.svg"
-                alt="brand recognition for the page"
-              />
-            </div>
-            <div class="statistics-text-container">
-              <h3>Brand Recognition</h3>
+        </section>
+        <section class="section-statistics">
+          <div class="container-statistics">
+            <div class="header-statistics">
+              <h2>Advanced Statistics</h2>
               <p>
-                Boost your brand recognition with each click. Generic links
-                don’t mean a thing. Branded links help instil confidence in your
-                content.
+                Track how your links are performing across the web with our
+                advanced statistics dashboard.
+              </p>
+            </div>
+            <div class="statistics-card rounded-border">
+              <div class="statistics-icons-container">
+                <img
+                  src="./images/icon-brand-recognition.svg"
+                  alt="brand recognition for the page"
+                />
+              </div>
+              <div class="statistics-text-container">
+                <h3>Brand Recognition</h3>
+                <p>
+                  Boost your brand recognition with each click. Generic links
+                  don’t mean a thing. Branded links help instil confidence in your
+                  content.
+                </p>
+              </div>
+            </div>
+            <div class="statistics-card rounded-border">
+              <div class="statistics-icons-container">
+                <img
+                  src="./images/icon-detailed-records.svg"
+                  alt="brand recognition for the page"
+                />
+              </div>
+              <h3>Detailed Records</h3>
+              <p>
+                Gain insights into who is clicking your links. Knowing when and
+                where people engage with your content helps inform better
+                decisions.
+              </p>
+            </div>
+            <div class="statistics-card rounded-border">
+              <div class="statistics-icons-container">
+                <img
+                  src="./images/icon-fully-customizable.svg"
+                  alt="brand recognition for the page"
+                />
+              </div>
+              <h3>Fully Customizable</h3>
+              <p>
+                Improve brand awareness and content discoverability through
+                customizable links, supercharging audience engagement.
               </p>
             </div>
           </div>
-          <div class="statistics-card">
-            <div class="statistics-icons-container">
-              <img
-                src="./images/icon-detailed-records.svg"
-                alt="brand recognition for the page"
-              />
-            </div>
-            <h3>Detailed Records</h3>
-            <p>
-              Gain insights into who is clicking your links. Knowing when and
-              where people engage with your content helps inform better
-              decisions.
-            </p>
-          </div>
-          <div class="statistics-card">
-            <div class="statistics-icons-container">
-              <img
-                src="./images/icon-fully-customizable.svg"
-                alt="brand recognition for the page"
-              />
-            </div>
-            <h3>Fully Customizable</h3>
-            <p>
-              Improve brand awareness and content discoverability through
-              customizable links, supercharging audience engagement.
-            </p>
-          </div>
-        </div>
-        <div class="statistics-line"></div>
-      </section>
+          <div class="statistics-line"></div>~
+        </section>
+      </div>
       <section class="cta-section">
         <div class="cta-container nice-bg">
           <h2>Boost your links today</h2>
-          <button class="btn btn--primary btn--rounded">Get Started</button>
+          <a href="#shorten-section-id" class="btn btn--primary btn--rounded">Get Started</a>
         </div>
       </section>
     </main>
@@ -137,8 +145,9 @@
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by <a href="#">Manuel Céspedes</a>.
     </div> -->
+    <script src="./scripts/general.js"></script>
   </body>
   <footer class="footer">
     <div class="footer-container">
@@ -174,16 +183,16 @@
       </div>
       <ul class="social-links">
         <li>
-          <a href="#"><img src="./images/icon-facebook.svg" alt="" /></a>
+          <a href="#"><i class="fa-brands fa-square-facebook social-icon"></i></a>
         </li>
         <li>
-          <a href="#"><img src="./images/icon-twitter.svg" alt="" /></a>
+          <a href="#"><i class="fa-brands fa-twitter social-icon"></i></a>
         </li>
         <li>
-          <a href="#"><img src="./images/icon-pinterest.svg" alt="" /></a>
+          <a href="#"><i class="fa-brands fa-pinterest social-icon"></i></a>
         </li>
         <li>
-          <a href="#"><img src="./images/icon-instagram.svg" alt="" /></a>
+          <a href="#"><i class="fa-brands fa-instagram social-icon"></i></a>
         </li>
       </ul>
     </div>
