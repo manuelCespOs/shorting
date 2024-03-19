@@ -27,6 +27,10 @@ const showShortenedLink = (mainLink, shortenedLink) => {
     //Adding button style & Text
     copyButton.className = 'btn btn--primary';
     copyButton.textContent = 'Copy';
+    copyButton.addEventListener('click', e => {
+        e.preventDefault();
+        copyLinkAction(shortenedLink, copyButton);
+    });
 
     //Adding shortened p style & Text
     shortenedLinkTextElement.className = 'shortened-link';
@@ -70,6 +74,17 @@ shortlyForm.addEventListener('submit', (e) => {
         linkInput.value = '';
     })
 })
+
+const copyLinkAction = async (link, element) => {   
+    try {
+        await navigator.clipboard.writeText(link);
+        element.classList.add('copied-btn');
+        element.textContent = 'Copied!';
+    }catch (err) {
+        console.error('Failed to copy: ', err);
+    }
+}
+
 
 const fetchHTTP = (URL, method, body) => fetch(URL, {
     method: method || 'GET',
