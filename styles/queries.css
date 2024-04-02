@@ -1,0 +1,229 @@
+/* 1rem = 1em = 16px */
+/**************************/
+/* desktop 2100px */
+/**************************/
+@media (max-width: 131em) {
+    h1 {
+        font-size: 9rem;
+    }
+    .hero-text-box {
+        margin: 0;
+    }
+    .header-statistics {
+        padding: 0 28rem;
+        margin: 4.2rem 0;
+    }
+    .statistics-card {
+        padding: 0rem 8rem 1rem 8rem;
+    }
+}
+
+/**************************/
+/* desktop 1800px */
+/**************************/
+@media (max-width: 113em) {
+    h1 {
+        font-size: 8rem;
+    }
+    h2 {
+        font-size: 4rem;
+    }
+
+    .statistics-card {
+        padding: 0rem 2rem 1rem 3rem;
+    }
+}
+
+/**************************/
+/* desktop 1688px */
+/**************************/
+@media (max-width: 105.5em) {
+    .hero-text-box {
+        width: 60%;
+    }
+    .hero-img-box {
+        width: 40%;
+    }
+    .hero-img-box img {
+        width: 120%;
+        right: 4rem;
+    }
+} 
+/**************************/
+/* desktop 1440px */
+/**************************/
+@media (max-width: 90em) {
+    .hero-text-box {
+        width: 60%;
+    }
+
+    .hero-img-box img {
+        width: 136%;
+        right: 6rem;
+    }
+    .nice-bg {
+        background-size: 150%;
+    }
+
+}
+
+/**************************/
+/* desktop 1312px */
+/***********************1140***/
+@media (max-width: 82em) {
+    .hero-img-box img {
+        /* width: 160%;
+        right: 8rem; */
+    }
+    .header-statistics {
+        padding: 0 18rem;
+        margin: 4.2rem 0;
+    }
+    .container-statistics {
+        grid-template-rows: auto 42rem;
+    }
+
+    .statistics-card {
+        height: 32rem;
+    }
+
+    .statistics-card h3 {
+        padding-top: 5.4rem;
+    }
+    
+}
+
+/**************************/
+/*  1104px */
+/**************************/
+@media (max-width: 69em) {
+    .hero-img-box img {
+        top: -8rem;
+    }
+    .container-statistics {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 32rem 32rem 32rem;
+    }
+    .header-statistics {
+        grid-column: 1/2;
+        padding: 0 8rem;
+    }
+    .section-statistics {
+        height: 140rem;
+    }
+    .statistics-card {
+        margin: 0 18rem;
+        height: 28rem;
+        text-align: center;
+    }
+    .statistics-icons-container {
+        left: 39%;
+    }
+    .statistics-card h3 {
+        padding-top: 8.4rem;
+    }
+    .statistics-line {
+        height: 80rem;
+        width: 1%;
+        top: -94rem;
+        left: 49.5%;
+    }
+}
+
+/**************************/
+/*  1040px */
+/**************************/
+@media (max-width: 65em) {
+    .main-nav,
+    .sign-options {
+        display: none !important;
+    }
+
+    .hamburger-menu-button {
+        display: block !important;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        padding-block: 2rem 8rem;
+        gap: 8rem;
+    }
+    
+    .hero div {
+        max-width: 100%;
+        width: auto;
+    }
+
+    .hero-img-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-img-box img {
+        width: 100%;
+        position: static;
+
+    }
+}
+
+/**************************/
+/* mobile 995px */
+/**************************/
+@media (max-width: 62.2em) {
+    .container {
+        padding-inline: 12.8rem
+    }
+    .shorten {
+        background-image: url(../images/bg-shorten-mobile.svg);
+        background-position: top right;
+        background-size: 50% 50%;
+        top: -3rem;
+        height: auto;
+    }
+    .shorten-form {
+        flex-direction: column;
+        padding: 2rem;
+    }
+    .shorten-form div {
+        width: 100%;
+    }
+    
+    .shorten input,
+    .shorten .btn {
+        width: 100%;
+    }
+
+    .statistics-card {
+        margin: 0 12rem;
+    }
+    .statistics-icons-container {
+        left: 41%;
+    }
+    .cta-container {
+        background-image: url(../images//bg-boost-mobile.svg);
+        background-size: 100% 100%;
+    }
+}
+/**************************/
+/* mobile 816px */
+/**************************/
+@media (max-width: 51em) {
+    h1 {
+        font-size: 6rem;
+    }
+
+    p.main-paragraph {
+        font-size: 2rem;
+    }
+
+    .statistics-card {
+        margin: 0 6rem;
+    }
+    .statistics-icons-container {
+        left: 40%;
+    }
+}
+/**************************/
+/* mobile 375px */
+/**************************/

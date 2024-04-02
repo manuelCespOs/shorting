@@ -28,7 +28,6 @@ HEADER SECTION
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 0 16.8rem;
   height: 12.8rem;
   position: relative;
 }
@@ -72,6 +71,21 @@ MAIN NAV SECTION
   color: #3b3054;
 }
 
+.hamburger-menu-button {
+  background-color: #fff;
+  font-size: 2.4rem;
+  border: none;
+  display: none !important;
+  padding: 2rem;
+}
+
+.hamburger-menu-options-container {
+  /* display: none; */
+  background-color: #fff;
+  box-shadow: 0 0 3.2rem rgba(0, 0, 0, 0.10);
+  padding: 2rem;
+  position: fixed;
+}
 /* 
 ------------------------------------------
 HERO SECTION
@@ -81,13 +95,14 @@ HERO SECTION
   display: flex;
   align-items: center;
   gap: 2.4rem;
-  padding: 12.4rem 16.8rem;
+  padding-block: 12.4rem;
   margin: 0 auto;
 }
 
 .hero-text-box {
   flex-direction: column;
-  width: 60%;
+  width: 50%;
+  margin: 3.4rem;
 }
 
 .heading-primary {
@@ -96,7 +111,6 @@ HERO SECTION
 }
 
 .hero-description {
-  font-size: 2.4rem;
   padding: 1.2rem 6.4rem 0.8rem 0;
   line-height: 1.4;
 }
@@ -108,11 +122,12 @@ HERO SECTION
   width: fit-content;
 }
 
+.hero-img-box {
+  max-width: 40%;
+}
+
 .hero-img-box img {
-  position: absolute;
-  width: 50%;
-  top: 18rem;
-  right: -8%;
+  position: relative;
 }
 
 /* 
@@ -123,7 +138,6 @@ SHORTEN SECTION
 .section-shorten {
   height: 40px;
   width: 100%;
-  padding: 0 16.8rem;
 }
 
 .shorten {
@@ -139,9 +153,6 @@ SHORTEN SECTION
   justify-content: center;
 }
 
-/* .shorten * {
-  padding: 1.6rem;
-} */
 .shorten-form {
   width: 100%;
   display: flex;
@@ -149,8 +160,13 @@ SHORTEN SECTION
   align-items: center;
   gap: 1.6rem;
 }
-.shorten input {
+
+.shorten-form div {
   width: 70%;
+}
+
+.shorten input {
+  width: 100%;
   padding: 1.7rem 2.4rem;
   border-radius: 1.2rem;
   border: none;
@@ -169,6 +185,9 @@ SHORTEN SECTION
 .invalid input::placeholder {
   color: hsla(0, 87%, 67%, 0.493);
 }
+.invalid button {
+  align-self: flex-start;
+}
 
 /* p.form-error-message {
   display: none;
@@ -181,13 +200,13 @@ SHORTEN SECTION
   color: #f46262;
   font-style: italic;
   /* display: none; */
-  padding: 0.8rem 5rem;
+  padding-top: 0.8rem;
   font-size: 1.2rem;
 }
 
-.shorten button {
+/* .shorten button {
   width: 20%;
-}
+} */
 
 /* 
 ------------------------------------------
@@ -197,7 +216,7 @@ Links SECTION
 .main-section-container {
   margin-top: 2.2rem;
   background-color: #f4f4f8;
-  padding: 5.8rem 16.8rem;
+  padding-block: 5.8rem;
   min-height: 82rem;
   height: fit-content;
 }
@@ -264,7 +283,7 @@ Statistics SECTION
   grid-column: 1/4;
   justify-self: center;
   text-align: center;
-  padding: 0 28rem;
+  padding: 0 40rem;
   margin: 4.2rem 0;
 }
 
@@ -289,7 +308,7 @@ Statistics SECTION
 .statistics-card {
   background-color: #f4f4f8;
   height: 28rem;
-  padding: 0rem 2rem 1rem 3rem;
+  padding: 0rem 14rem 1rem 14rem;
   position: relative;
   box-shadow: 0 0 3.2rem rgba(0, 0, 0, 0.10);
 }
@@ -369,7 +388,7 @@ Footer
   justify-content: center;
   gap: 3.2rem;
 
-  padding: 7.6rem 16.8rem;
+  padding-block: 7.6rem;
 }
 
 .footer-container a:hover {
