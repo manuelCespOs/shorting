@@ -1,7 +1,8 @@
 const shortlyForm = document.getElementById('shorten-form-id');
 const copyLinkBtn = document.getElementById('copy-link-btn');
 const errorMessages = document.getElementsByClassName('form-error-message');
-
+const menuButton = document.getElementById('menu-button');
+const closeMenuButton = document.querySelector('#menu-options-container button.close-menu-btn');
 
 const valueIsEmpty = value => value.trim().length === 0;
 
@@ -83,6 +84,19 @@ const copyLinkAction = async (link, element) => {
     }catch (err) {
         console.error('Failed to copy: ', err);
     }
+}
+
+menuButton.onclick = (event) => {
+    event.preventDefault();
+    const linksContainer = document.getElementById('menu-options-container');
+    linksContainer.classList.toggle('show-menu');
+}
+
+closeMenuButton.onclick = (event) => {
+    event.preventDefault();
+    const linksContainer = document.getElementById('menu-options-container');
+    
+    linksContainer.classList.toggle('show-menu');
 }
 
 

@@ -80,6 +80,10 @@ BUTTONS
 
   transition: all 0.3s;
 }
+.btn:hover,
+.btn:active {
+  color: #9e9aa7;
+}
 .btn:link,
 .btn:visited {
   font-size: 1.8rem;
@@ -149,3 +153,11 @@ p.main-paragraph {
   background-size: 100%;
   background-repeat: no-repeat;
 }
+/* 
+--------------------------------------
+General
+--------------------------------------
+ */
+ .show {
+  display: block !important;
+ }
