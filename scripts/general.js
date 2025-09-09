@@ -9,6 +9,9 @@ const valueIsEmpty = value => value.trim().length === 0;
 const toggleInvalid = isNotValid => {
     if (!isNotValid) {
         shortlyForm.classList.remove('invalid');
+        // shortlyForm.classList.remove('invalid');
+        // shortlyForm.classList.remove('invalid');
+        // shortlyForm.classList.remove('invalid');
     } else {
         shortlyForm.classList.add('invalid');
     }
